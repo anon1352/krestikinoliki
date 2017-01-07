@@ -42,9 +42,13 @@
 
 - суммы столбцов кратны размерности матрицы с элементами вида ![a_yx](https://github.com/anon1352/krestikinoliki/blob/master/f0.gif):
  
- имеем ![что для всех y, где y<=Dim(M), верно sum(M[y][i]) % 4 = 0](https://github.com/anon1352/krestikinoliki/blob/master/f1.gif)
+ имеем
  
- и сверх того, ![sum(M[y][i]) = Dim(M) * (sum(Dim(M)-1) + y)](https://github.com/anon1352/krestikinoliki/blob/master/f2.gif)
+ ![что для всех y, где y<=Dim(M), верно sum(M[y][i]) % 4 = 0](https://github.com/anon1352/krestikinoliki/blob/master/f1.gif)
+ 
+ и сверх того,
+ 
+ ![sum(M[y][i]) = Dim(M) * (sum(Dim(M)-1) + y)](https://github.com/anon1352/krestikinoliki/blob/master/f2.gif)
  
  Проверим: для первого (нулевого) столбца: `(4 * ((1+2+3) + 0)) = 24`, для второго: `(4 * ((1+2+3) + 1)) = 28` и так далее.
 
